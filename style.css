@@ -234,4 +234,11 @@ img {
   background-color: #1f2937;
   color: #f9faf8;
   font-size: large;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
