@@ -11,14 +11,17 @@ img {
     height: auto;
 }
 
-.container {
+.header-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 /* Navbar Section */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   color: #f9faf8;
   background-color: #1f2937;
   padding: 20px 0px 20px 100px;
@@ -33,6 +36,7 @@ img {
 
 .header-link {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   padding: 0px 100px 0px 0px;
 }
@@ -62,7 +66,7 @@ img {
   gap: 10px;
 }
 
-.button {
+.hero-btn {
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
@@ -77,14 +81,14 @@ img {
   margin: 5px;
 }
 
-.button span {
+.hero-btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.hero-btn span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -93,11 +97,11 @@ img {
   transition: 0.5s;
 }
 
-.button:hover span {
+.hero-btn:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.hero-btn:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -108,4 +112,72 @@ img {
     margin-left: auto;
     padding: 0 100px 0 0;
     width: 500px;
+}
+
+/* Body Section */
+.body-container {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  background-color: whitesmoke;
+  margin-bottom: 16px;
+}
+
+.body-title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  padding: 10px 10px 10px 10px;
+}
+
+.body-resource {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 52px;
+}
+
+.info img {
+  max-width: 200px;
+  border-style: solid;
+  border-color: #191970;
+  border-radius: 10px;
+
+}
+
+.text {
+  font-size: large;
+}
+
+/* Quote Section */
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  background-color: #e5e7eb;
+  margin-bottom: 16px;
+}
+
+/* Sign-Up Section */
+.sign-up {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  background-color: #191970;
+  border-style: solid;
+  border-radius: 8px;
+  height: 100px;
+  width: 500px;
+  padding: 10px 80px;
+  margin: auto;
+}
+
+.sign-container {
+  flex: 1;
+  text-align: left;
 }
